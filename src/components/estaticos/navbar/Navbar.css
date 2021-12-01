@@ -1,6 +1,14 @@
 
+.cursor{
+    cursor:pointer;
+    color:white
+}
 
+.text-decorator-none{
+    text-decoration: none;
+}
 
 .cor-nave-bar{
-    background: black!important;
+    background: rgb(190, 103, 147)!important;
 }
+
