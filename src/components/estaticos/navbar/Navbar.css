@@ -1,14 +1,25 @@
 
 .cursor{
     cursor:pointer;
-    color:white
+    color:rgb(230, 8, 8);
+    
+
 }
 
+
+.cursor2{
+    cursor:pointer;
+    color:rgb(230, 8, 8);
+    margin: 0px 0px 0px 400px !important;
+
+}
 .text-decorator-none{
     text-decoration: none;
+    margin: 0px 0px 0px 70px;
 }
 
 .cor-nave-bar{
-    background: rgb(190, 103, 147)!important;
+    background-color: black	;
 }
+
 

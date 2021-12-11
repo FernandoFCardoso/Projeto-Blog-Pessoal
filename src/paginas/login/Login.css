@@ -1,14 +1,15 @@
 .textos1{
     font-weight: bold !important;
+    color: rgba(255, 255, 255, 0.856)!important;
  }
  .cor-fundo{
-     background-color: rgb(241, 157, 199)!important;
+     background-color:rgb(53, 53, 53)!important;
  }
  
  .imagem{
-     background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+     background-image: url(https://i.imgur.com/ufftGXU.gif);
      background-repeat: no-repeat;
-     width: 100vh;
+     width: 10vh;
      min-height: 100vh;
      background-size: cover;
      background-position: center;
@@ -16,4 +17,39 @@
  
  .text-decorator-none{
      text-decoration: none;
+     color: rgba(255, 255, 255, 0.856)!important;
+
  }
+
+ .textos2{
+    font-weight: bold !important;
+  
+    color: rgba(255, 255, 255, 0.856)!important;
+ }
+
+ .cor-boton{
+    font-weight: bold !important;
+    color: rgba(0, 0, 0, 0.856)!important;
+    background-color:rgb(202, 7, 7)!important;
+ }
+
+ .cor-boton:hover{
+      
+        color: rgb(202, 7, 7)!important;
+        background-color:rgb(19, 18, 18)!important;
+ }
+
+ /* Estilizar o AutoFill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(53, 53, 53) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
