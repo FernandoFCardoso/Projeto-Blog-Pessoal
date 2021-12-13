@@ -5,6 +5,9 @@ import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import './Login.css';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/token/actions';
+
 
 const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
@@ -36,7 +39,8 @@ const CssTextField = styled(TextField)({
 
 function Login() {
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
+    const dispatch = useDispatch();
+    const [token, setToken] = useState('');
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,
@@ -56,6 +60,7 @@ function Login() {
 
     useEffect(() => {
         if (token != '') {
+            dispatch(addToken(token));
             history.push('/home')
         }
     }, [token])
@@ -84,6 +89,10 @@ function Login() {
                                 Logar
                             </Button>
                         </Box>
+                            <label>
+                                Lembre-me
+                                <input type="checkbox" className='textos3'/>
+                            </label>
                     </form>
                     <Box display='flex' justifyContent='center' marginTop={2}>
                         <Box marginRight={1}>
