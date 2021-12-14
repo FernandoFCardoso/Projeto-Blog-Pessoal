@@ -21,31 +21,33 @@
     margin-right: 20px !important;
     font-weight: bold !important;
     color: rgba(0, 0, 0, 0.856)!important;
-    background-color:rgb(202, 7, 7)!important;}
+    background-color:#8B0000	 !important;
+}
 
 .cor-boton2{
     font-weight: bold !important;
     color: rgba(0, 0, 0, 0.856)!important;
-    background-color:rgb(202, 7, 7)!important;
+    background-color:#8B0000	 !important;
  }
 
  .cor-boton2:hover{
         font-weight: bold !important;
-        color: rgb(202, 7, 7)!important;
+        color: #8B0000	 !important;
         background-color:rgb(19, 18, 18)!important;
  }
 
  .cor-boton3{
     font-weight: bold !important;
-    color: rgba(167, 11, 11, 0.856)!important;
+    color: #8B0000	 !important;
     background-color:rgb(10, 10, 10)!important;
-    margin-right: 30px !important;
+    margin-right: 10px !important;
+   
  }
 
  .cor-boton3:hover{
         font-weight: bold !important;
         color: rgb(20, 20, 20)!important;
-        background-color:rgb(134, 2, 2)!important;
+        background-color:#8B0000	 !important;
  }
 
 

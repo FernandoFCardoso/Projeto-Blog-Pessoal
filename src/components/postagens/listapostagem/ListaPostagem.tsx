@@ -14,7 +14,7 @@ function ListaPostagem() {
     let history = useHistory();
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
 
 
     useEffect(() => {
@@ -43,9 +43,9 @@ function ListaPostagem() {
         <>
             {
                 posts.map(post => (
-                    <Box m={2} >
+                    <Box  m={4} >
                         <Card variant="outlined">
-                            <CardContent>
+                            <CardContent className="fundoPost" >
                                 <Typography color="textSecondary" gutterBottom>
                                     Postagens
                                 </Typography>
@@ -59,19 +59,19 @@ function ListaPostagem() {
                                     {post.tema?.descricao}
                                 </Typography>
                             </CardContent>
-                            <CardActions>
-                                <Box display="flex" justifyContent="center" mb={1.5}>
+                            <CardActions className="fundoPost2">
+                                <Box display="flex" justifyContent="center" mb={0.5}>
 
                                     <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                                        <Box mx={1}>
-                                            <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                                        <Box mx={3}>
+                                            <Button className ="cor-boton2" variant="contained"  size='small'>
                                                 atualizar
                                             </Button>
                                         </Box>
                                     </Link>
                                     <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-                                        <Box mx={1}>
-                                            <Button variant="contained" size='small' color="secondary">
+                                        <Box mx={4}>
+                                            <Button className ="cor-boton2" variant="contained" size='small' >
                                                 deletar
                                             </Button>
                                         </Box>

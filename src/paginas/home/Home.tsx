@@ -7,13 +7,15 @@ import { useHistory } from 'react-router';
 
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/token/tokensReducer';
+import { Link } from 'react-router-dom';
+
 
 function Home() {
 
     let history = useHistory();
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
 
     useEffect(() => {
         if (token == "") {
@@ -32,14 +34,16 @@ function Home() {
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Deixe aqui aquele recadinho pro seu time de coração!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <ModalPostagem />
+                        <Box  marginRight={1}>
+                            <ModalPostagem  />
                         </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        <Link to="/posts" className="text-decorator-none">
+                            <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        </Link>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://i.imgur.com/nXH6Ke1.jpg" />
+                    <img className ="imagem-size"src="https://i.imgur.com/NM1HuSr.jpg" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />

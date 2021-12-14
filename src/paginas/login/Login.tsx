@@ -11,10 +11,10 @@ import { addToken } from '../../store/token/actions';
 
 const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
-        color: 'red',
+        color: 'rgb(202, 199, 199)',
     },
     '& .MuiFormLabel-root': {
-        color: 'red',
+        color: 'rgb(202, 199, 199)',
     },
     '& .MuiInput-underline:after': {
         borderBottomColor: '#4c63fc',
@@ -31,7 +31,7 @@ const CssTextField = styled(TextField)({
             boxShadow: '2px 2px 2px white',
         },
         '&.Mui-focused fieldset': {
-            borderColor: 'red',
+            borderColor: 'rgb(204, 16, 16)',
             boxShadow: '3px 3px 3px 3px #8B0000',
         },
     },
@@ -89,7 +89,7 @@ function Login() {
                                 Logar
                             </Button>
                         </Box>
-                            <label>
+                            <label className="cursor">
                                 Lembre-me
                                 <input type="checkbox" className='textos3'/>
                             </label>
