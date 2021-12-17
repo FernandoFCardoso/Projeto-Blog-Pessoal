@@ -1,5 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from 'react'
-import { Container, Typography, TextField, Button } from "@material-ui/core"
+import { Container, Typography, TextField, Button, styled } from "@material-ui/core"
 import { useHistory, useParams } from 'react-router-dom'
 import './CadastroTema.css';
 import Tema from '../../../models/Tema';
@@ -7,6 +7,33 @@ import { buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/token/tokensReducer';
 
+const CssTextField = styled(TextField)({
+    '& label.Mui-focused': {
+        color: '#8B0000',
+    },
+    '& .MuiFormLabel-root': {
+        color: '#8B0000',
+    },
+    '& .MuiInput-underline:after': {
+        borderBottomColor: '#4c63fc',
+    },
+    '& .MuiInputBase-input': {
+        color: 'black',
+    },
+    '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+            borderColor: 'rgb(202, 199, 199)',
+        },
+        '&:hover fieldset': {
+            borderColor: '#8B0000',
+            boxShadow: '2px 2px 2px white',
+        },
+        '&.Mui-focused fieldset': {
+            borderColor: 'red',
+            boxShadow: '2px 2px 2px 2px #8B0000',
+        },
+    },
+});
 
 function CadastroTema() {
     let history = useHistory();
@@ -82,8 +109,8 @@ function CadastroTema() {
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary">
+                <CssTextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
+                <Button className = "cor-boton3" type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>
             </form>

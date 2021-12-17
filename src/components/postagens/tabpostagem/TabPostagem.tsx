@@ -26,7 +26,7 @@ function TabPostagem() {
                 </TabPanel>
                 <TabPanel className="fundo" value="2">
                     <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
-                    <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ut eveniet natus totam et, voluptate dicta tempore alias, odio nobis non eius cupiditate minima inventore pariatur! Ipsum itaque consectetur voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit consequuntur suscipit fugiat, nam quis quod quaerat veritatis et, vel ratione beatae, facere neque! Quo animi porro voluptate saepe deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore adipisci, officia aut quidem dolorum deserunt iure dolorem doloribus velit nobis quas consequatur at ullam odit, nesciunt est nulla nihil excepturi!</Typography>
+                    <Typography variant="body1" gutterBottom color="textPrimary"  className="titulo" align="justify">Salve família tricolor! Como estão?! Venho aqui por meio desse blog unir todos os são paulinos e são paulinas que querem falar sobre nosso time de coração. Sabe quando bate aquela raiva?! Pois é aqui é o lugar! E quando acontece uma virada aos 45' do segundo tempo? Venha comemorar aqui também! Infos, mercado da bola e muito mais, aqui no Salve o Tricolor Paulista!!!</Typography>
                 </TabPanel>
             </TabContext>
         </>

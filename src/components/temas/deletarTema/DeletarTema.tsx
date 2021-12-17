@@ -31,7 +31,7 @@ function DeletarTema() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/tema/${id}`, setTema, {
+        buscaId(`/temas/${id}`, setTema, {
             headers: {
                 'Authorization': token
             }
@@ -40,7 +40,7 @@ function DeletarTema() {
 
     function sim() {
         history.push('/temas')
-        deleteId(`/tema/${id}`, {
+        deleteId(`/temas/${id}`, {
             headers: {
                 'Authorization': token
             }
@@ -56,25 +56,25 @@ function DeletarTema() {
         <>
             <Box m={2}>
                 <Card variant="outlined">
-                    <CardContent>
+                    <CardContent  className="fundoPost1">
                         <Box justifyContent="center">
-                            <Typography color="textSecondary" gutterBottom>
+                            <Typography className="corTexto" gutterBottom>
                                 Deseja deletar o Tema:
                             </Typography>
-                            <Typography color="textSecondary">
+                            <Typography className="corTexto">
                                 {tema?.descricao}
                             </Typography>
                         </Box>
                     </CardContent>
-                    <CardActions>
+                    <CardActions className="fundoPost2">
                         <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
                             <Box mx={2}>
-                                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+                                <Button className="cor-boton4" onClick={sim} variant="contained"  size='large' >
                                     Sim
                                 </Button>
                             </Box>
                             <Box mx={2}>
-                                <Button onClick={nao} variant="contained" size='large' color="secondary">
+                                <Button className="cor-boton4" onClick={nao} variant="contained" size='large' >
                                     Não
                                 </Button>
                             </Box>

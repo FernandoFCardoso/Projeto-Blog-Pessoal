@@ -46,16 +46,16 @@ function ListaPostagem() {
                     <Box  m={4} >
                         <Card variant="outlined">
                             <CardContent className="fundoPost" >
-                                <Typography color="textSecondary" gutterBottom>
+                                <Typography className="corTexto" color="textSecondary" gutterBottom>
                                     Postagens
                                 </Typography>
-                                <Typography variant="h5" component="h2">
+                                <Typography className="corTexto" variant="h5" component="h2">
                                     {post.titulo}
                                 </Typography>
-                                <Typography variant="body2" component="p">
+                                <Typography className="corTexto" variant="body2" component="p">
                                     {post.texto}
                                 </Typography>
-                                <Typography variant="body2" component="p">
+                                <Typography className="corTexto" variant="body2" component="p">
                                     {post.tema?.descricao}
                                 </Typography>
                             </CardContent>
